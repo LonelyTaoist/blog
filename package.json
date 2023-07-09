@@ -1,0 +1,40 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "This is the blog of LonelyTaoist",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docs:dev": "vuepress dev docs --temp .temp",
+    "docs:build": "vuepress build docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LonelyTaoist/blog.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LonelyTaoist/blog/issues"
+  },
+  "homepage": "https://github.com/LonelyTaoist/blog#readme",
+  "devDependencies": {
+    "vuepress": "^1.9.9",
+    "vuepress-plugin-autometa": "^0.1.13",
+    "vuepress-plugin-baidu-autopush": "^1.0.1",
+    "vuepress-plugin-feed": "^0.1.9",
+    "vuepress-theme-vdoing": "^1.12.8"
+  },
+  "dependencies": {
+    "vuepress-plugin-code-copy": "^1.0.6",
+    "vuepress-plugin-cursor-effects": "^1.1.6",
+    "vuepress-plugin-dynamic-title": "^1.0.0",
+    "vuepress-plugin-helper-live2d": "^1.0.2",
+    "vuepress-plugin-reading-progress": "^1.0.10",
+    "vuepress-plugin-sitemap": "^2.3.1"
+  }
+}
