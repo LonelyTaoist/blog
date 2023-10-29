@@ -16,10 +16,10 @@ module.exports = {
         nav: [
             { text: '首页', link: '/' },
             {
-                text: '计算机', link: '/computer/'//, items: [
-                //{ text: 'Hello1', link: '/pages/Hello1/' },
+                text: '计算机', link: '/computer/', items: [
+                { text: 'Git', link: '/computer/Git/1/' }//,
                 //{ text: 'Hello2', link: '/pages/Hello2/' }
-                //]
+                ]
             },
             { text: '金融', link: '/finance/' },
         ],
