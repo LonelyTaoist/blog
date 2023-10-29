@@ -7,7 +7,7 @@ module.exports = {
     theme: 'vdoing',
     themeConfig: {
         logo: '/picture/keli1.jpg',
-        lastUpdated: '上次更新', // string | boolean
+        lastUpdated: false, // string | boolean
         locales: {
             '/': {
                 lang: 'zh-CN'
