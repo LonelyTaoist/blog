@@ -2,11 +2,11 @@ module.exports = {
     title: '济沧浪',
     description: 'LonelyTaoist的个人博客',
     head: [
-        ['link', { rel: 'icon', href: '/picture/keli1.jpg' }]
+        ['link', { rel: 'icon', href: '/picture/Genshin/keli1.png' }]
     ],
     theme: 'vdoing',
     themeConfig: {
-        logo: '/picture/keli1.jpg',
+        logo: '/picture/Genshin/keli1.png',
         lastUpdated: false, // string | boolean
         locales: {
             '/': {
@@ -32,17 +32,51 @@ module.exports = {
             <img src='/beian.png'>
             <a href='http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=32011502011853'>苏公网安备 32011502011853号</a>`
         },
+
+        // 博主信息，显示在首页侧边栏
+        blogger: {
+            avatar: '/picture/Honkai-StarRail/jingliu2.png',  //头像
+            name: 'LonelyTaoist',
+            slogan: '道可道非常道 名可名非常名' // 个性签名
+        },
+
+        //背景大图
+        bodyBgImg: [
+            '/picture/Genshin/shenlilinghua-long.png',
+        ],
+        bodyBgImgOpacity: 0.5, // body 背景图透明度，选值 0 ~ 1.0, 默认0.5
+
+        social: {
+            // iconfontCssFile: '//at.alicdn.com/t/font_1678482_u4nrnp8xp6g.css', // 可选，阿里图标库在线css文件地址，对于主题没有的图标可自由添加
+            icons: [
+                {
+                    iconClass: "icon-youjian",
+                    title: "邮件",
+                    link: "mailto:lonelytaoist@qq.com",
+                },
+                {
+                    iconClass: "icon-github",
+                    title: "GitHub",
+                    link: "https://github.com/LonelyTaoist",
+                },
+                {
+                    iconClass: "icon-csdn",
+                    title: "CSDN",
+                    link: "https://blog.csdn.net/u011871449",
+                },
+            ],
+        },
     },
 
     plugins: [
+        // 阅读进度条
+        'reading-progress',
+
         // 复制代码块的插件
         ['vuepress-plugin-code-copy', true],
 
         // 自动推送百度
         ['vuepress-plugin-baidu-autopush', true],
-
-        // 阅读进度条
-        'reading-progress',
 
         // 光标特效
         [
