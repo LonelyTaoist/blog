@@ -26,6 +26,9 @@ module.exports = {
             { text: '金融', link: '/finance/' },
         ],
         sidebar: 'structuring',
+        // 默认外观模式
+        defaultMode: 'dark',
+        
         footer: {
             createYear: 2023,
             copyrightInfo: `<a href='http://beian.miit.gov.cn/'>苏ICP备2023014117号-1</a>
