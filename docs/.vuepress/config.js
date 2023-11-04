@@ -17,8 +17,10 @@ module.exports = {
             { text: '首页', link: '/' },
             {
                 text: '计算机', link: '/computer/', items: [
-                { text: 'Git', link: '/computer/Git/1/' }//,
-                //{ text: 'Hello2', link: '/pages/Hello2/' }
+                    { text: 'Git', link: '/computer/Git/1/' },
+                    { text: 'Linux', link: '/computer/Linux/99/' },
+                    { text: 'C++', link: '/computer/C++/99/' },
+                    { text: '设计模式', link: '/computer/DesignPatterns/1/' }
                 ]
             },
             { text: '金融', link: '/finance/' },
