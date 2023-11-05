@@ -2,11 +2,11 @@ module.exports = {
     title: '济沧浪',
     description: 'LonelyTaoist的个人博客',
     head: [
-        ['link', { rel: 'icon', href: '/picture/Genshin/keli1.png' }]
+        ['link', { rel: 'icon', href: 'https://blog-web-image.oss-cn-shanghai.aliyuncs.com/Genshin-keli1.png' }]
     ],
     theme: 'vdoing',
     themeConfig: {
-        logo: '/picture/Genshin/keli1.png',
+        logo: 'https://blog-web-image.oss-cn-shanghai.aliyuncs.com/Genshin-keli1.png',
         lastUpdated: false, // string | boolean
         locales: {
             '/': {
@@ -27,7 +27,7 @@ module.exports = {
         ],
         sidebar: 'structuring',
         // 默认外观模式
-        defaultMode: 'dark',
+        defaultMode: 'read',
         
         footer: {
             createYear: 2023,
@@ -38,14 +38,14 @@ module.exports = {
 
         // 博主信息，显示在首页侧边栏
         blogger: {
-            avatar: '/picture/Honkai-StarRail/jingliu2.png',  //头像
+            avatar: 'https://blog-web-image.oss-cn-shanghai.aliyuncs.com/HonkaiStarRail-jingliu2.png',  //头像
             name: 'LonelyTaoist',
             slogan: '道可道非常道 名可名非常名' // 个性签名
         },
 
         //背景大图
         bodyBgImg: [
-            '/picture/Genshin/shenlilinghua-long.png',
+            'https://blog-web-image.oss-cn-shanghai.aliyuncs.com/Genshin-shenlilinghua-long.png',
         ],
         bodyBgImgOpacity: 0.5, // body 背景图透明度，选值 0 ~ 1.0, 默认0.5
 
