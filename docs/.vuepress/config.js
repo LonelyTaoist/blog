@@ -45,9 +45,13 @@ module.exports = {
 
         //背景大图
         bodyBgImg: [
-            'https://blog-web-image.oss-cn-shanghai.aliyuncs.com/Genshin-shenlilinghua-long.png',
+            // 'https://blog-web-image.oss-cn-shanghai.aliyuncs.com/Genshin-shenlilinghua-long.png',
+            'https://blog-web-image.oss-cn-shanghai.aliyuncs.com/Genshin-fufu1.png',
+            // 'https://blog-web-image.oss-cn-shanghai.aliyuncs.com/Genshin-fufu2.png',
         ],
-        bodyBgImgOpacity: 0.5, // body 背景图透明度，选值 0 ~ 1.0, 默认0.5
+        // 多张背景图的切换时间
+        // bodyBgImgInterval: 10,
+        bodyBgImgOpacity: 1, // body 背景图透明度，选值 0 ~ 1.0, 默认0.5
 
         social: {
             // iconfontCssFile: '//at.alicdn.com/t/font_1678482_u4nrnp8xp6g.css', // 可选，阿里图标库在线css文件地址，对于主题没有的图标可自由添加
