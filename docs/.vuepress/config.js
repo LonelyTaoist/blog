@@ -27,7 +27,7 @@ module.exports = {
         ],
         sidebar: 'structuring',
         // 默认外观模式
-        defaultMode: 'read',
+        defaultMode: 'light',
         
         footer: {
             createYear: 2023,
