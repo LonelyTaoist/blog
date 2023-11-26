@@ -2,11 +2,11 @@ module.exports = {
     title: '济沧浪',
     description: 'LonelyTaoist的个人博客',
     head: [
-        ['link', { rel: 'icon', href: 'https://blog-web-image.oss-cn-shanghai.aliyuncs.com/Genshin-keli1.png' }]
+        ['link', { rel: 'icon', href: 'https://blog-web-image.oss-cn-shanghai.aliyuncs.com/genshin/keli1.png' }]
     ],
     theme: 'vdoing',
     themeConfig: {
-        logo: 'https://blog-web-image.oss-cn-shanghai.aliyuncs.com/Genshin-keli1.png',
+        logo: 'https://blog-web-image.oss-cn-shanghai.aliyuncs.com/genshin/keli1.png',
         lastUpdated: false, // string | boolean
         locales: {
             '/': {
@@ -38,16 +38,16 @@ module.exports = {
 
         // 博主信息，显示在首页侧边栏
         blogger: {
-            avatar: 'https://blog-web-image.oss-cn-shanghai.aliyuncs.com/HonkaiStarRail-jingliu2.png',  //头像
+            avatar: 'https://blog-web-image.oss-cn-shanghai.aliyuncs.com/star_rail/jingliu2.png',  //头像
             name: 'LonelyTaoist',
             slogan: '道可道非常道 名可名非常名' // 个性签名
         },
 
         //背景大图
         bodyBgImg: [
-            // 'https://blog-web-image.oss-cn-shanghai.aliyuncs.com/Genshin-shenlilinghua-long.png',
-            'https://blog-web-image.oss-cn-shanghai.aliyuncs.com/Genshin-fufu1.png',
-            // 'https://blog-web-image.oss-cn-shanghai.aliyuncs.com/Genshin-fufu2.png',
+            // 'https://blog-web-image.oss-cn-shanghai.aliyuncs.com/genshin/shenlilinghua-long.png',
+            'https://blog-web-image.oss-cn-shanghai.aliyuncs.com/genshin/fufu1.png',
+            // 'https://blog-web-image.oss-cn-shanghai.aliyuncs.com/genshin/fufu2.png',
         ],
         // 多张背景图的切换时间
         // bodyBgImgInterval: 10,
