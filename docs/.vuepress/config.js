@@ -20,7 +20,8 @@ module.exports = {
                     { text: 'Git', link: '/computer/Git/1/' },
                     { text: 'Linux', link: '/computer/Linux/99/' },
                     { text: 'C++', link: '/computer/C++/99/' },
-                    { text: '设计模式', link: '/computer/DesignPatterns/1/' }
+                    { text: '设计模式', link: '/computer/DesignPatterns/1/' },
+                    { text: 'CUDA', link: '/computer/CUDA/1/' }
                 ]
             },
             { text: '金融', link: '/finance/' },
