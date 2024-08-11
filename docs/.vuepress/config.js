@@ -2,8 +2,16 @@ module.exports = {
     title: '济沧浪',
     description: 'LonelyTaoist的个人博客',
     head: [
-        ['link', { rel: 'icon', href: 'https://blog-web-image.oss-cn-shanghai.aliyuncs.com/genshin/keli1.png' }]
+        ['link', { rel: 'icon', href: 'https://blog-web-image.oss-cn-shanghai.aliyuncs.com/genshin/keli1.png' }],
+        ['link', { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css' }],                          // 让md支持数学公式
+        ['link', { rel: "stylesheet", href: 'https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/2.10.0/github-markdown.min.css' }]  // 让md支持数学公式
     ],
+    // 让md支持数学公式
+    markdown: {
+        extendMarkdown: md => {
+            md.use(require('markdown-it-katex'))
+        }
+    },
     theme: 'vdoing',
     themeConfig: {
         logo: 'https://blog-web-image.oss-cn-shanghai.aliyuncs.com/genshin/keli1.png',
@@ -21,7 +29,8 @@ module.exports = {
                     { text: 'Linux', link: '/computer/Linux/99/' },
                     { text: 'C++', link: '/computer/C++/99/' },
                     { text: '设计模式', link: '/computer/DesignPatterns/1/' },
-                    { text: 'CUDA', link: '/computer/CUDA/1/' }
+                    { text: 'CUDA', link: '/computer/CUDA/1/' },
+                    { text: 'AI', link: '/computer/AI/1/' }
                 ]
             },
             { text: '金融', link: '/finance/' },
@@ -29,7 +38,7 @@ module.exports = {
         sidebar: 'structuring',
         // 默认外观模式
         defaultMode: 'light',
-        
+
         footer: {
             createYear: 2023,
             copyrightInfo: `<a href='http://beian.miit.gov.cn/'>苏ICP备2023014117号-1</a>
@@ -43,11 +52,11 @@ module.exports = {
             name: 'LonelyTaoist',
             slogan: '道可道非常道 名可名非常名' // 个性签名
         },
-        
+
         // 大图首页
-        bodyBgImg: 
-        // 'https://blog-web-image.oss-cn-shanghai.aliyuncs.com/genshin/shenlilinghua-long.png',
-        'https://blog-web-image.oss-cn-shanghai.aliyuncs.com/genshin/fufu1.png',  
+        bodyBgImg:
+            // 'https://blog-web-image.oss-cn-shanghai.aliyuncs.com/genshin/shenlilinghua-long.png',
+            'https://blog-web-image.oss-cn-shanghai.aliyuncs.com/genshin/fufu1.png',
         // 'https://blog-web-image.oss-cn-shanghai.aliyuncs.com/genshin/fufu2.png',
         // 你的图片路径(必须位于 public 下)，可以是 URL
         bodyBgImgOpacity: 1, // body 背景图透明度，选值 0 ~ 1.0, 默认0.5
@@ -66,7 +75,7 @@ module.exports = {
             bubble: false,    // 是否开启图片的气泡效果，默认为 false
             bubblePosition: 0,  // 气泡效果的位置，范围：0-100，不同数值代表不同的起始位置，0是整个图片，50是半张图（一半的下方）。bubble 为 true 生效。默认是 0
             bubbleNum: 200,   // 气泡的个数，bubble 为 true 生效，默认 200 个
-          },
+        },
         //背景大图
         // bodyBgImg: [
         //     // 'https://blog-web-image.oss-cn-shanghai.aliyuncs.com/genshin/shenlilinghua-long.png',
@@ -100,6 +109,9 @@ module.exports = {
     },
 
     plugins: [
+        ['vuepress-plugin-mathjax', {
+            presets: 'safe',
+        }],
         // 阅读进度条
         'reading-progress',
 
